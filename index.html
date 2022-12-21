@@ -29,7 +29,7 @@
 
 <body>
   <!-- Barra de navegacion -->
-  <nav class="navbar navbar-expand-md">
+  <nav class="navbar navbar-expand-md seccion-oscura">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
         aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +41,10 @@
         </a>
         <ul class="navbar-nav d-flex justify-content-center align-items-center">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#sobre-mi">Sobre mí</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#proyectos">Proyectos</a>
@@ -55,26 +58,40 @@
   </nav>
 
   <!-- Hero -->
-  <section id="" class="hero align-items-stretch">
-    <div class="hero-principal d-flex flex-column align-items-center justify-content-center">
-      <img class="hero-imagen" src="./images/f.jpeg" alt="Foto de Fabio">
-      <h1>Hola, soy Fabio Chirinos</h1>
-      <h2>Full Stack Developer Junior</h2>
+  <section id="" class="hero seccion-oscura">
+    <div class="row align-items-center">
+      <div class="hero-principal col-md-6 intros text-start">
+        <div>
+          <h1>Hola, soy Fabio Chirinos</h1>
+          <h2>Un apasionado desarrollador web full stack junior de Lima-Perú. 👨‍💻</h2>
+        </div>
+      </div>
+      <div class="col-md-6 intros text-end">
+        <img class="hero-imagen" src="./images/f.jpeg" alt="Foto de Fabio">
+      </div>
     </div>
-    <div class="hero-inferior">
-      <img class="hero-inferior-imagen img-fluid" src="./images/hero-inferior.svg"
-        alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
-    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
   </section>
 
   <!-- Sobre mi -->
-  <section id="sobre-mi" class="sobre-mi seccion-oscura">
-    <div class="contenedor">
-      <h2 class="seccion-titulo">Sobre mí</h2>
-      <p class="seccion-texto">Egresado de la carrera de ingeniería de sistemas e informática en la Universidad
-        Tecnológica del Perú. Me caracterizo por ser una persona con mucha predisposición por aprender, disciplinado,
-        con pensamiento analítico y liderazgo.</p>
-    </div>
+  <section id="sobre-mi" class="container sobre-mi seccion-clara mt-5">
+      <div class="row align-items-center">
+        <div class="col-md-6 intros text-start">
+          <h2 class="seccion-titulo">Sobre mí</h2>
+          <p class="seccion-texto">Egresado de la carrera de ingeniería de sistemas e informática en la Universidad
+            Tecnológica del Perú. Me caracterizo por ser una persona con mucha predisposición por aprender,
+            disciplinado,
+            con pensamiento analítico y liderazgo.</p>
+        </div>
+        <div class="col-md-6 intros text-end">
+          <img class="hero-inferior-imagen img-fluid" src="./images/hero-inferior.svg"
+        alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+        </div>
+      </div>
   </section>
 
   <!-- de Experiencia -->
@@ -85,7 +102,8 @@
         <div class="columna col-12 col-md-4">
           <i class="bi bi-laptop"></i>
           <p class="experiencia-titulo">Desarrollo Web</p>
-          <p>Trabajar como desarrollador de software es todo un sueño. Es lo que realmente me apasiona y disfruto el día a día de esta hermosa carrera. He estudiado el MERN stack para crear aplicaciones increíbles</p>
+          <p>Trabajar como desarrollador de software es todo un sueño. Es lo que realmente me apasiona y disfruto el día
+            a día de esta hermosa carrera. He estudiado el MERN stack para crear aplicaciones increíbles</p>
           <div class="badges-contenedor">
             <span class="badge text-bg-primary">MongoDB</span>
             <span class="badge text-bg-primary">Express</span>
@@ -98,7 +116,8 @@
         <div class="columna col-12 col-md-4">
           <i class="bi bi-mortarboard"></i>
           <p class="experiencia-titulo">Estudiante</p>
-          <p>Soy una persona autodidacta, me gusta mucho aprender nuevas tecnologías. La  universidad te da las herramientas y conocimientos básicos pero ya depende de cada uno aprender a fondo</p>
+          <p>Soy una persona autodidacta, me gusta mucho aprender nuevas tecnologías. La universidad te da las
+            herramientas y conocimientos básicos pero ya depende de cada uno aprender a fondo</p>
           <div class="badges-contenedor">
             <span class="badge text-bg-primary">UTP</span>
             <span class="badge text-bg-primary">Udemy</span>
@@ -110,7 +129,8 @@
         <div class="columna col-12 col-md-4">
           <i class="bi bi-lightning"></i>
           <p class="experiencia-titulo">Habilidades blandas</p>
-          <p>Tengo una buena actitud y disposición para aprender. Me adapto muy bien a los cambios y me gusta trabajar en equipo. Comunicación asertiva y creatividad</p>
+          <p>Tengo una buena actitud y disposición para aprender. Me adapto muy bien a los cambios y me gusta trabajar
+            en equipo. Comunicación asertiva y creatividad</p>
           <div class="badges-contenedor">
             <span class="badge text-bg-primary">Trabajo en equipo</span>
             <span class="badge text-bg-primary">Comunicación</span>
@@ -246,7 +266,7 @@
     <div class="container">
       <div id="contacto" class="container text-center rectangulo d-flex justify-content-evenly">
         <div class="row">
-          <div class="col-12 col-md-4 seccion-titulo">
+          <div class="col-12 col-md-4 seccion-titulo-footer">
             ¡Hablemos!
           </div>
           <div class="col-12 col-md-4 descripcion">

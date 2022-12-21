@@ -2,7 +2,14 @@
 
 .navbar {
   padding: 2rem;
-  background-color: #f5f6f7;
+}
+
+.navbar a img{
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(74deg) brightness(106%) contrast(102%);
+}
+
+.navbar ul li a {
+  color: #fff !important;
 }
 
 .navbar-collapse {
@@ -33,17 +40,22 @@ h1 {
 
 .seccion-oscura {
   color: #fff;
-  background-color: #2F2F2F;
+  background-color: #212529;
 }
 
 .seccion-clara {
   color: #000;
-  background-color: #f5f6f7;
+  background-color: #fff;
 }
 
 .seccion-titulo {
-  font-size: 2rem;
+  font-size: 4rem;
   padding: 15px 0 25px 0;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.seccion-titulo-footer {
+  font-size: 2rem;
   font-family: 'Abril Fatface', cursive;
 }
 
@@ -60,9 +72,12 @@ h1 {
 /* Seccion Hero */
 
 .hero {
-  background-color: #f5f6f7;
-  min-height: 450px;
+  min-height: 500px;
   text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
 }
 
 .hero-principal {
@@ -78,7 +93,11 @@ h1 {
 
 .hero-principal h2 {
   font-size: 1.5rem;
-  color: #615151;
+  color: #fff;
+}
+
+.hero-inferior-imagen {
+  margin-bottom: 40px;
 }
 
 /* Seccion sobre mi */
