@@ -1,3 +1,0 @@
-Cambiar el tamaño de la foto
-poner un border botton de color del footer
-hacer que el nav se vea siempre
